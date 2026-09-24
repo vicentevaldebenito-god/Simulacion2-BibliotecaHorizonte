@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Horizonte</title>
+    <meta name="author" content="Vicente Valdebenito">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs">
+</head>
+
+<body>
+    <header>
+        <nav class="Nav">
+            <div class="Nav_Logo">
+                <img src="static/images/Libro.png" alt="Logo">
+                <div class="Nav_Text">
+                    <h1>Biblioteca</h1>
+                    <h1 class="Azul">Horizonte</h1>
+                </div>
+            </div>
+            <div class="Nav_Extras">
+                <div class="Nav_Form">
+                    <input id="input" type="email" name="email" placeholder="Email">
+                    <button id="boton" type="submit">Ingresar</button>
+                </div>
+                <div class="Nav_Libros">
+                    <img src="static/images/Libros.png" alt="Logo-Libros">
+                    <div class="Nav_Libros_Text">
+                        <h1>Libros <br>seleccionados:</h1>
+                        <p id="Carrito">0</p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="Main">
+        <div class="Categorias">
+            <div class="Categoria">
+                <img src="static/images/Libro.png" alt="Novelas">
+                <p>Novelas</p>
+            </div>
+            <div class="Categoria">
+                <img src="static/images/Ciencia.png" alt="Ciencia">
+                <p>Ciencia</p>
+            </div>
+            <div class="Categoria">
+                <img src="static/images/Historia.png" alt="Historia">
+                <p>Historia</p>
+            </div>
+            <div class="Categoria">
+                <img src="static/images/Tecnologia.png" alt="Tecnologia">
+                <p>Tecnología</p>
+            </div>
+            <div class="Categoria">
+                <img src="static/images/tostadas.jpg" alt="tostadas">
+                <p>Arte</p>
+            </div>
+            <div class="Categoria">
+                <img src="static/images/enfrijoladas.jpg" alt="enfrijoladas">
+                <p>Infantil</p>
+            </div>
+        </div>
+        <div class="Seccion2">
+            <div class="Anuncio">
+                <div class="Anuncio_Texto">
+                    <p>La mejor variedad en platillos de comidas <span class="Negrita">mexicana</span></p>
+                    <p>Contamos con <span class="Subrayado">servicio</span> a <span class="Naranjo">domicilio</span></p>
+                </div>
+                <div class="Anuncio_Imagen">
+                    <img id="Imagen" src="static/images/comida-mexicana.jpg" id="Comida" alt="Comida-Mexicana">
+                </div>
+            </div>
+            <div class="Recomendaciones">
+                <h1>Recomendados:</h1>
+                <div class="Recomendacion">
+                    <img src="static/images/orden-tacos.jpg" alt="Orden1">
+                    <div class="Recomendacion_Info">
+                        <p>Orden de tacos</p>
+                        <a href="#">Ver mas...</a>
+                        <div class="Pedir">
+                            <button id="Carro">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="Recomendacion">
+                    <img src="static/images/orden-flautas.jpg" alt="Orden2">
+                    <div class="Recomendacion_Info">
+                        <p>Orden de flautas</p>
+                        <a href="#">Ver mas...</a>
+                        <div class="Pedir">
+                            <button id="Carro2">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+
+    <script src="static/js/script.js"></script>
+</body>
+
+</html>
