@@ -2,31 +2,41 @@
 <html lang="es">
 
 <head>
+    <!-- Configuración básica -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biblioteca Horizonte</title>
     <meta name="author" content="Vicente Valdebenito">
+
+    <!-- Conexion a CSS -->
     <link rel="stylesheet" href="static/css/style.css">
 </head>
 
 <body>
+    <!-- Header y  Nav -->
     <header>
-        <nav class="Nav">
-            <div class="Nav_Logo">
+        <nav class="nav">
+            <!-- Logo y título de la biblioteca -->
+            <div class="nav_logo">
                 <img src="static/images/Libro.png" alt="Logo">
-                <div class="Nav_Text">
+                <div class="nav_text">
                     <h1>Biblioteca</h1>
-                    <h1 class="Azul">Horizonte</h1>
+                    <h1 class="azul">Horizonte</h1>
                 </div>
             </div>
-            <div class="Nav_Extras">
-                <div class="Nav_Form">
+
+            <!-- Segunda parte de nav -->
+            <div class="nav_extras">
+                <!-- Formulario -->
+                <div class="nav_form">
                     <input id="input" type="email" name="email" placeholder="Email">
                     <button id="boton" type="submit">Ingresar</button>
                 </div>
-                <div class="Nav_Libros">
+
+                <!-- Carrito -->
+                <div class="nav_libros">
                     <img src="static/images/Libros.png" alt="Logo-Libros">
-                    <div class="Nav_Libros_Text">
+                    <div class="nav_libros_text">
                         <h1>Libros <br>seleccionados:</h1>
                         <p id="Carrito">0</p>
                     </div>
@@ -34,76 +44,91 @@
             </div>
         </nav>
     </header>
-    <main class="Main">
-        <div class="Categorias">
-            <div class="Categoria">
+
+    <!-- Main -->
+    <main class="main">
+        <!-- Categorías de libros -->
+        <div class="categorias">
+            <div class="categoria">
                 <img src="static/images/Libro.png" alt="Novelas">
                 <p>Novelas</p>
             </div>
-            <div class="Categoria">
+            <div class="categoria">
                 <img src="static/images/Ciencia.png" alt="Ciencia">
                 <p>Ciencia</p>
             </div>
-            <div class="Categoria">
+            <div class="categoria">
                 <img src="static/images/Historia.png" alt="Historia">
                 <p>Historia</p>
             </div>
-            <div class="Categoria">
+            <div class="categoria">
                 <img src="static/images/Tecnologia.png" alt="Tecnologia">
                 <p>Tecnología</p>
             </div>
-            <div class="Categoria">
+            <div class="categoria">
                 <img src="static/images/Arte.png" alt="Arte">
                 <p>Arte</p>
             </div>
-            <div class="Categoria">
+            <div class="categoria">
                 <img src="static/images/Infantil.png" alt="Infantil">
                 <p>Infantil</p>
             </div>
         </div>
-        <div class="Seccion2">
-            <div class="Anuncio">
-                <div class="Anuncio_Texto">
-                    <p class="Negrita">Descubre nuevas historias</p>
-                    <div class="Raya"></div>
-                    <p class="Desc">Explora nuestra biblioteca virtual y encuentra libros para todos los gustos.
+
+        <!-- Segunda sección: Anuncio y recomendaciones de libros -->
+        <div class="seccion_2">
+            <!-- Anuncio  -->
+            <div class="anuncio">
+                <div class="anuncio_texto">
+                    <p class="negrita">Descubre nuevas historias</p>
+                    <div class="raya"></div>
+                    <p class="desc">Explora nuestra biblioteca virtual y encuentra libros para todos los gustos.
                         Conocimiento, aventura y mucho más al alcance de un clic.</p>
                 </div>
-                <div class="Anuncio_Imagen">
+                <div class="anuncio_imagen">
                     <img id="Imagen" src="static/images/Biblioteca.png" id="Biblioteca" alt="Biblioteca">
+                    <p class="desc">Conoce la Biblioteca Horizonte</p>
                 </div>
             </div>
-            <div class="Recomendaciones">
+
+            <!-- Lista de recomendaciones -->
+            <div class="recomendaciones">
                 <h1>Libros recomendados:</h1>
-                <div class="Recomendacion">
+
+                <!-- Libro 1 -->
+                <div class="recomendacion">
                     <img src="static/images/Libro1.png" alt="Libro1">
-                    <div class="Recomendacion_Info">
-                        <p>Cien años de soledad</p>
-                        <p class="Desc">Gabriel García Márquez</p>
-                        <a href="#">Ver mas...</a>
-                        <div class="Pedir">
+                    <div class="recomendacion_info">
+                        <h2 class="titulo_libro">Cien años de soledad</h2>
+                        <p class="desc">Gabriel García Márquez</p>
+                        <a href="#">Ver más...</a>
+                        <div class="pedir">
                             <button id="Carro">+</button>
                         </div>
                     </div>
                 </div>
-                <div class="Recomendacion">
+
+                <!-- Libro 2 -->
+                <div class="recomendacion">
                     <img src="static/images/Libro2.png" alt="Libro2">
-                    <div class="Recomendacion_Info">
-                        <p>Sapiens</p>
-                        <p class="Desc">Yuval Noah Harari</p>
-                        <a href="#">Ver mas...</a>
-                        <div class="Pedir">
+                    <div class="recomendacion_info">
+                        <h2 class="titulo_libro">Sapiens</h2>
+                        <p class="desc">Yuval Noah Harari</p>
+                        <a href="#">Ver más...</a>
+                        <div class="pedir">
                             <button id="Carro2">+</button>
                         </div>
                     </div>
                 </div>
-                <div class="Recomendacion">
+
+                <!-- Libro 3 -->
+                <div class="recomendacion">
                     <img src="static/images/Libro3.png" alt="Libro3">
-                    <div class="Recomendacion_Info">
-                        <p>El principito</p>
-                        <p class="Desc">Antoine de Saint-Exupéry</p>
-                        <a href="#">Ver mas...</a>
-                        <div class="Pedir">
+                    <div class="recomendacion_info">
+                        <h2 class="titulo_libro">El principito</h2>
+                        <p class="desc">Antoine de Saint-Exupéry</p>
+                        <a href="#">Ver más...</a>
+                        <div class="pedir">
                             <button id="Carro3">+</button>
                         </div>
                     </div>
@@ -111,10 +136,7 @@
             </div>
         </div>
     </main>
-    <footer>
-
-    </footer>
-
+    <!-- Conexion a Javascript -->
     <script src="static/js/script.js"></script>
 </body>
 

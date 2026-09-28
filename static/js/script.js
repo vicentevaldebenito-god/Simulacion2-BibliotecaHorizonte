@@ -1,3 +1,4 @@
+// Codigo JavaScript para la funcionalidad del carrito
 let Carro = document.querySelector("#Carro");
 let Carro_Counter = document.querySelector("#Carrito");
 let Carro2 = document.querySelector("#Carro2");
@@ -17,6 +18,8 @@ Carro3.addEventListener("click", function () {
     Carro_Counter.innerText = `${Carro_Compras}`;
 });
 
+
+// Codigo JavaScript para el cambio de imagen
 const imagen = document.getElementById("Imagen");
 const imagenNueva = "static/images/Biblioteca.png";
 const imagenOg = "static/images/Biblioteca2.png";

@@ -1,232 +1,383 @@
+/* Quita los márgenes por defecto de la página */
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
 
+/* Cambia la letra de toda la página */
 body {
     font-family: arial;
-    flex-wrap: wrap;
-    
 }
 
-.Nav {
+/* Le da forma y color a la navbar */
+.nav {
     background-color: rgb(247, 247, 247);
-    border: 4px rgb(222, 222, 222) solid;
+    border-bottom: 2px solid rgb(222, 222, 222);
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 100px;
-    flex-wrap: wrap;
+    height: 90px;
+    padding: 0px 30px;
 }
 
-.Azul {
+/* Para poner texto azul */
+.azul {
     color: rgb(36, 93, 163);
 }
 
-.Nav_Logo {
+/* Acomoda el logo */
+.nav_logo {
     display: flex;
-    padding: 10px;
     align-items: center;
+    gap: 10px;
+    padding: 0px;
+}
+
+/* Pone el texto del logo uno arriba de otro */
+.nav_text {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Tamaño de la imagen del logo */
+.nav_logo img {
+    width: 60px;
+    height: 60px;
+}
+
+/* Acomoda las cosas de la derecha de la barra */
+.nav_extras {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 0px;
+}
+
+/* Ajusta la caja del email y el botón */
+.nav_form {
+    display: flex;
+    height: 38px;
     gap: 5px;
 }
 
-.Nav_Text{
-    display:flex;
-    flex-direction: column;
-}
-.Nav_Logo img {
-    width: 70px;
-    height: 70px;
-}
-
-.Nav_Extras {
-    display: flex;
-    gap: 50px;
-    padding: 20px;
-}
-
-.Nav_Form {
-    display: flex;
-    height:40px;
-    gap:5px;
-}
-
-.Nav_Form button {
+/* Pone el botón azul con letras blancas */
+.nav_form button {
     background-color: rgb(40, 94, 165);
     border: none;
     color: white;
     width: 100px;
-    border-radius:5px;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
-.Nav_Libros {
+/* Acomoda la zona del carrito */
+.nav_libros {
     display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+/* Tamaño del icono del carrito */
+.nav_libros img {
+    width: 35px;
+    height: 35px;
+}
+
+/* Pone el texto y el número del carrito juntos */
+.nav_libros_text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     gap: 5px;
-    align-items: center;
 }
 
-.Nav_Libros img{
-    width:40px;
-    height:40px;
+/* Tamaño del texto del carrito */
+.nav_libros_text h1 {
+    font-size: 14px;
 }
 
-.Nav_Libros_Text{
-    display:flex;
-    flex-direction: row;
-    align-items:center;
+/* Tamaño del número del carrito */
+.nav_libros_text p {
+    font-size: 16px;
+    padding-top: 15px;
+    font-weight: bold;
 }
-.Nav_Libros_Text h1{
-    font-size:18px;
-}
-.Nav_Libros_Text p{
-    font-size:18px;
-    padding-top:20px;
-}
-.Main {
+
+/* Centra todo el contenido del medio ocupando casi todo el sitio */
+.main {
     display: flex;
     align-items: center;
     flex-direction: column;
-    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 20px;
 }
 
-.Categorias {
-    background-color: rgb(209, 220, 232);
+/* Barra gris con las categorías ajustadas de extremo a extremo */
+.categorias {
+    background-color: rgb(215, 226, 238);
     display: flex;
-    width: 85%;
+    width: 95%;
+    max-width: 1400px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 25px;
+}
+
+/* Le da forma a cada caja de categoría */
+.categoria {
+    display: flex;
     align-items: center;
     justify-content: center;
-    gap: 30px;
-    padding: 25px;
-    flex-wrap: wrap;
-}
-
-.Categoria {
-    display: flex;
-    align-items: center;
     flex-direction: column;
-    font-size: 12px;
-    gap: 25px;
-    width:140px;
-    margin-bottom:5px;
-    flex-wrap: wrap;
-    background-color:rgb(237, 240, 244);
+    font-size: 13px;
+    gap: 8px;
+    width: 180px;
+    height: 110px;
+    background-color: rgb(237, 239, 245);
+    border-radius: 2px;
 }
 
-.Categoria img {
-    width: 60px;
-    height: 48px;
-    margin-top:20px;
+/* Tamaño de las imágenes de las categorías */
+.categoria img {
+    width: 45px;
+    height: 45px;
+    margin-top: 0px;
 }
 
-.Seccion2 {
+/* Junta el anuncio y las recomendaciones lado a lado ocupando el ancho amplio */
+.seccion_2 {
     display: flex;
-    align-items: center;
-    flex-direction: row;
-    gap:20px;
-    padding:20px;
-    flex-wrap: wrap;
-}
-
-.Anuncio{
-    width:725px;
-    height:405px;
-    background-color:rgb(197, 197, 197);
-    display:flex;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-    text-align:center;
-    padding:10px;
-    gap:10px;
-}
-
-.Anuncio_Texto{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    max-width:255px;
-    font-size:32px;
-    font-weight: lighter;
-    gap:20px;
-    text-align: start;
-}
-.Raya{
-    border:3px solid rgb(39, 94, 160);
-    width:80px;
-}
-.Anuncio img{
-    width:440px;
-    height:340px;
-}
-
-.Recomendaciones{
-    width:400px;
-    height:400px;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    padding:20px;
-}
-
-.Recomendacion{
-    display:flex;
+    align-items: flex-start;
     flex-direction: row;
     justify-content: space-between;
+    gap: 30px;
+    padding: 0px;
+    width: 95%;
+    max-width: 1400px;
+    margin-top: 25px;
+}
+
+/* El cuadro grande del anuncio */
+.anuncio {
+    flex: 1.5;
+    height: 400px;
+    background-color: rgb(215, 215, 215);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 35px;
+    gap: 20px;
+}
+
+/* Acomoda el texto dentro del anuncio */
+.anuncio_texto {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    max-width: 300px;
+    font-size: 38px;
+    font-weight: bold;
+    gap: 15px;
     text-align: start;
-    border:1px solid gray;
-    height:125px;
 }
 
-.Recomendacion img{
-    width:100px;
-    height:130px;
-    padding:20px;
+/* Hace una línea azul decorativa */
+.raya {
+    border-bottom: 4px solid rgb(39, 94, 160);
+    width: 50px;
 }
 
-.Subrayado{
+/* Tamaño de la imagen del anuncio */
+.anuncio img {
+    width: 420px;
+    height: 320px;
+}
+
+/* Cuadro donde van las recomendaciones */
+.recomendaciones {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 0px;
+}
+
+.recomendaciones h1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Caja de cada libro recomendado */
+.recomendacion {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: start;
+    border: 1px solid rgb(221, 221, 221);
+    background-color: rgb(255, 255, 255);
+    height: 115px;
+    padding: 10px 20px;
+    position: relative;
+}
+
+/* Tamaño de la foto de cada libro */
+.recomendacion img {
+    width: 70px;
+    height: 90px;
+    padding: 0px;
+    margin-right: 20px;
+}
+
+/* Subraya el texto */
+.subrayado {
     text-decoration: underline;
 }
 
-.Recomendacion_Info{
-    display:flex;
+/* Acomoda los textos del libro */
+.recomendacion_info {
+    display: flex;
     flex-direction: column;
-    max-width:350px;
-    width:350px;
-    padding:25px;
-    position: relative;
-    gap:15px;
-
+    justify-content: center;
+    gap: 6px;
 }
 
-.Desc{
-    color:rgb(66, 66, 66);
-    font-size:16px;
-}
-.Recomendacion_Info a{
-    max-width:80px;
-}
-.Pedir{
-    position:absolute;
-    top:75px;
-    left:210px;
-}
-.Pedir button{
-        background-color:rgb(24, 55, 84);
-    color:white;
-    border:none;
-    border-radius:50%;
-    height:40px;
-    width:40px;
-    font-size:30px;
-    cursor:pointer;
+.recomendacion_info p {
+    font-size: 14px;
+    font-weight: bold;
 }
 
-.Pedir button:hover{
-    background-color:rgb(187, 76, 2);
-
+/* Pone el texto en gris */
+.desc {
+    color: rgb(102, 102, 102);
+    font-size: 20px;
 }
-.Negrita{
-    font-weight:bold;
+
+/* Ajusta el link de ver más */
+.recomendacion_info a {
+    font-size: 13px;
+    color: rgb(39, 94, 160);
+    text-decoration: underline;
+}
+
+/* Mueve la posición del botón + */
+.pedir {
+    position: absolute;
+    right: 20px;
+    top: 60px;
+}
+
+/* Pone el botón + redondo y azul */
+.pedir button {
+    background-color: rgb(15, 45, 80);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    height: 38px;
+    width: 38px;
+    font-size: 22px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* Cambia el botón a naranja al pasar el mouse */
+.pedir button:hover {
+    background-color: rgb(187, 76, 2);
+}
+
+/* Pone las letras en negrita */
+.negrita {
+    font-weight: bold;
+}
+
+/* Tamaño de los títulos de los libros */
+.recomendacion_info h2 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Adaptación para pantallas pequeñas / celulares */
+@media (max-width: 768px) {
+
+    .nav {
+        height: 100%;
+        padding: 15px 10px;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .nav_extras {
+        gap: 15px;
+    }
+
+    .nav_form {
+        height: 32px;
+    }
+
+    .nav_form button {
+        width: 80px;
+    }
+
+
+    .categorias {
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        gap: 10px;
+        padding: 15px 10px;
+    }
+
+
+    .categoria {
+        width: 45%;
+        height: 90px;
+    }
+
+    .categoria img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .seccion_2 {
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .anuncio {
+        flex-direction: column;
+        height: 100%;
+        padding: 20px 15px;
+        text-align: center;
+    }
+
+    .anuncio_texto {
+        width: 100%;
+        max-width: 100%;
+        font-size: 24px;
+        align-items: center;
+    }
+
+    .anuncio img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .recomendaciones {
+        width: 100%;
+    }
+
+    .recomendacion {
+        height: 120px;
+        padding: 15px 10px;
+    }
+
+    .pedir {
+        position: static;
+    }
 }
